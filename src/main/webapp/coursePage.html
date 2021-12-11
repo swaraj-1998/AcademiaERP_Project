@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add Course 🚀</title>
+    <link rel="stylesheet" href="css/coursePage.css" />
+    <link rel="stylesheet" href =  https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css />
+    <link rel="stylesheet" href =  https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css />
+    <link rel="stylesheet" href =    https://fonts.googleapis.com/css?family=Roboto />
+    <style>
+        body {
+            background-image: url('images/background.jpg');
+            background-color : darkturquoise;
+            color: #ECF0F5;
+        }
+    </style>
+    </head>
+<body onload="myFunction()">
+<div class="container" style="background-color:#1A2226;margin-top: 50px">
+    <h1>ADD COURSE</h1>
+    <form>
+        <div class="row">
+            <div class="col-25">
+                <label for="name">&nbsp;&nbsp;Course Name  </label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="name" name="name" placeholder="Course Name..">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-25">
+                <label for="profName">&nbsp;&nbsp;Professor Name</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="profName" name="Professor Name" placeholder="Professor Name..">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="credits">&nbsp;&nbsp;Credits</label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="credits" name="Credits" placeholder="Enter Credits...">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="capacity">&nbsp;&nbsp;Capacity</label>
+            </div>
+            <div class="col-75">
+                <input type="number" id="capacity" name="Capacity" placeholder="Enter Capacity...">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="schedule">&nbsp;&nbsp;Schedule</label>
+            </div>
+            <div class="col-75">
+                <input type="text" id="schedule" name="Schedule" placeholder="Enter Schedule...">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="specialization">&nbsp;&nbsp;Specialization</label>
+            </div>
+            <div class="col-75">
+                <select id="specialization" name="specialization">
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    <option value="Cyber Security">Cyber Security</option>
+                    <option value="Computer Science">Computer Science</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-25">
+                <label for="prerequisitesDiv">&nbsp;&nbsp;Prerequisite Course Id's</label>
+            </div>
+            <div class="col-75">
+                <div class = "prerequisitesDiv" id = "prerequisitesDiv">
+
+
+                </div>
+                <br />
+            </div>
+        </div>
+
+
+        <div class="col-lg-12 loginbttm">
+            <div class="col-lg-6 login-btm login-text">
+                <!-- Error Message -->
+            </div>
+            <div class="col-lg-6 login-btm login-button">
+                <button type="submit" class="btn btn-outline-primary" onclick="submitFunction()">SUBMIT</button>
+            </div>
+        </div>
+<!--        <div class="row">-->
+<!--            <input type="submit"  onclick="submitFunction()">-->
+<!--        </div>-->
+    </form>
+</div>
+<script src="javascript/main.js"></script>
+</body>
+</html>
