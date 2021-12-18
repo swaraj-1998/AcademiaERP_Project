@@ -91,7 +91,6 @@ function submitFunction() {
             selected.push({course_id : option.value});
         }
     }
-    alert(selected);
     let obj = {
         name: name,
         professor: professor,
